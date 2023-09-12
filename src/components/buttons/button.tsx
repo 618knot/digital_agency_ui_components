@@ -1,4 +1,5 @@
 import './Button.scss';
+import 'material-icons'
 
 type ButtonProps = {
     label: string;
@@ -9,7 +10,7 @@ type ButtonProps = {
 export const Button = (props :ButtonProps) => {
     return (
         <button
-            className={props.className}
+            className={`button ${props.className}`}
             onClick={props.onClick}
         >
             {props.label}
